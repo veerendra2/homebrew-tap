@@ -5,21 +5,21 @@
 class Quotations < Formula
   desc "A tool to display random inspirational quotes and famous dialogues from movies and TV shows on your CLI. 😎"
   homepage "https://github.com/veerendra2/quotations"
-  version "1.0.4"
+  version "1.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/veerendra2/quotations/releases/download/v1.0.4/quotations_Darwin_x86_64.zip"
-      sha256 "53752b7d94577ce822c629a84c97efd85991016533d57997e234d56709d54747"
+      url "https://github.com/veerendra2/quotations/releases/download/v1.0.5/quotations_Darwin_x86_64.zip"
+      sha256 "ba34931bf010531cd8be10039bca076402ffeba33f30001bf5a5fe54baca54ff"
 
       def install
         bin.install "quotations"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/veerendra2/quotations/releases/download/v1.0.4/quotations_Darwin_arm64.zip"
-      sha256 "448d33157dc11aadc6f3e6f295cbc1ec63cef85d4141716e3a9e7b1e3ac34ef8"
+      url "https://github.com/veerendra2/quotations/releases/download/v1.0.5/quotations_Darwin_arm64.zip"
+      sha256 "2339b2f3b6fe62183eb9ccda3108afe9ccb0de17d8cd7f95f6de82b6ddad5ec3"
 
       def install
         bin.install "quotations"
@@ -29,15 +29,15 @@ class Quotations < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/veerendra2/quotations/releases/download/v1.0.4/quotations_Linux_x86_64.zip"
-      sha256 "226512804beae96fb5e49ea30ca40911bbc726a58d9d6883d4024e2f695d6415"
+      url "https://github.com/veerendra2/quotations/releases/download/v1.0.5/quotations_Linux_x86_64.zip"
+      sha256 "253e550529e4270f8c5e7118857c65d4de7083b57a452f69121e5bb91af9bff4"
       def install
         bin.install "quotations"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/veerendra2/quotations/releases/download/v1.0.4/quotations_Linux_arm64.zip"
-      sha256 "4992f48099581d1be6f90317d2bb7954ba97ebc7f2e9063cef3d5cc83ad928d6"
+      url "https://github.com/veerendra2/quotations/releases/download/v1.0.5/quotations_Linux_arm64.zip"
+      sha256 "db6c98689b98bef5cc73c4f7d1e8311fcdb81e77ca3a3af15e92a61c5763af40"
       def install
         bin.install "quotations"
       end
