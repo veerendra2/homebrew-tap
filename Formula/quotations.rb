@@ -5,7 +5,8 @@
 class Quotations < Formula
   desc "A tool to display random inspirational quotes and famous dialogues from movies and TV shows on your CLI. 😎"
   homepage "https://github.com/veerendra2/quotations"
-  version "1.0.5"
+  version "1.0.6"
+  disable! date: "2025-12-05", because: "the cask should be used now instead", replacement_cask: "quotations"
   license "MIT"
 
   on_macos do
