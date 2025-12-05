@@ -3,7 +3,7 @@ cask "quotations" do
   name "quotations"
   desc "A tool to display random inspirational quotes and famous dialogues from movies and TV shows on your CLI. 😎"
   homepage "https://github.com/veerendra2/quotations"
-  version "1.2.1"
+  version "1.2.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "quotations" do
     on_intel do
       url "https://github.com/veerendra2/quotations/releases/download/v#{version}/quotations_darwin_x86_64.zip",
         verified: "github.com/veerendra2/quotations"
-      sha256 "1ba1f313395c70932b40e7b51b33575b3fe4822f052c407713401357e7ea1f34"
+      sha256 "e8bc0c1400f9d40c465e176366571c26b2fec0a4e7da2d267f644db1e976f8f0"
     end
     on_arm do
       url "https://github.com/veerendra2/quotations/releases/download/v#{version}/quotations_darwin_arm64.zip",
         verified: "github.com/veerendra2/quotations"
-      sha256 "92ab640f108ff62f5cd368ad7205312fb5ea63de7474a52361cd63c409eb9772"
+      sha256 "05737dd0c391e2db9f8e84be71cc243bb7d6cd8d45d86c5e00bcbb5f0dce12de"
     end
   end
 
@@ -28,12 +28,12 @@ cask "quotations" do
     on_intel do
       url "https://github.com/veerendra2/quotations/releases/download/v#{version}/quotations_linux_x86_64.zip",
         verified: "github.com/veerendra2/quotations"
-      sha256 "27d64d0074e6bff1c5790586f55a365a0ef283c1ab0a34a3410684c3a2593f09"
+      sha256 "b951ae51b9d9e2e00dbdc22732a82a810a20039da2677ba6c803e2ddc4d82b86"
     end
     on_arm do
       url "https://github.com/veerendra2/quotations/releases/download/v#{version}/quotations_linux_arm64.zip",
         verified: "github.com/veerendra2/quotations"
-      sha256 "a1775ff631cca9dabe5d84f8d4ee0959af78f70aead7cfdbeb3ab4d0830b3b3d"
+      sha256 "64c0b26a75b4746d6350caf0fe4b34cf3e87a57669f49a9f5d9172eb1a4b7fd6"
     end
   end
 
@@ -46,7 +46,7 @@ cask "quotations" do
   caveats do
     "ℹ️ To display a random quote when terminal opens, add it to your shell"
     "💡 Example for Bash:"
-    "echo "quotations" >> ~/.bashrc"
+    "echo quotations >> ~/.bashrc"
   end
 
   # No zap stanza required
