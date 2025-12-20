@@ -3,7 +3,7 @@ cask "cold2warm" do
   name "cold2warm"
   desc "A CLI tool to bulk-restore S3 objects from archival storage classes using concurrent goroutines."
   homepage "https://github.com/veerendra2/cold2warm"
-  version "0.1.1"
+  version "0.1.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "cold2warm" do
     on_intel do
       url "https://github.com/veerendra2/cold2warm/releases/download/v#{version}/cold2warm_darwin_x86_64.zip",
         verified: "github.com/veerendra2/cold2warm"
-      sha256 "aea3644455d9a3f9eaa25194256e681c18b6447f3991d74e9e17869c45d34bda"
+      sha256 "d54a7660c2d227fa567ed9e2e96b6391f50ee76b6f333c6204e85019217a0dbb"
     end
     on_arm do
       url "https://github.com/veerendra2/cold2warm/releases/download/v#{version}/cold2warm_darwin_arm64.zip",
         verified: "github.com/veerendra2/cold2warm"
-      sha256 "14944567f084a271393093bbc135898ac8f6c87e013b974dfdfaa72cc3312da3"
+      sha256 "9a78318bcd29f092b38e10ad2583056aebf160704a234cf8eb6f2c4426afec74"
     end
   end
 
@@ -28,12 +28,12 @@ cask "cold2warm" do
     on_intel do
       url "https://github.com/veerendra2/cold2warm/releases/download/v#{version}/cold2warm_linux_x86_64.zip",
         verified: "github.com/veerendra2/cold2warm"
-      sha256 "75f35cf88571193423d2487fe60850a4439155ff7f358f2bb64d2cd0e3c30752"
+      sha256 "e941af89a4d68ea00085d226a7f58aaee5ce7dc0ef20ae62c838822bc6e22c47"
     end
     on_arm do
       url "https://github.com/veerendra2/cold2warm/releases/download/v#{version}/cold2warm_linux_arm64.zip",
         verified: "github.com/veerendra2/cold2warm"
-      sha256 "85a3ff47196d36745db2af66724f2bd8ea66787aaa51c470b82fbe5bb8c80ca1"
+      sha256 "7b807febfbaa579f086e443a02cf14b347193cd24a22a8a233b51779e0f30ccd"
     end
   end
 
