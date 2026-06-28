@@ -5,21 +5,21 @@
 class MiseDotfilesUninstall < Formula
   desc "The missing uninstaller companion for mise's dotfiles (Until native support)."
   homepage "https://github.com/veerendra2/mise-dotfiles-uninstall"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/veerendra2/mise-dotfiles-uninstall/releases/download/v1.0.0/mise-dotfiles-uninstall_darwin_x86_64.zip"
-      sha256 "1c3937239b0862fb11c736fcfe491fd7fc4cc0e061134eb39617e82015c01703"
+      url "https://github.com/veerendra2/mise-dotfiles-uninstall/releases/download/v1.1.0/mise-dotfiles-uninstall_darwin_x86_64.zip"
+      sha256 "90d8117df3f43953ebb3da584ca76aba6c978537b964284af75ae6bf9dc241da"
 
       define_method(:install) do
         bin.install "mise-dotfiles-uninstall"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/veerendra2/mise-dotfiles-uninstall/releases/download/v1.0.0/mise-dotfiles-uninstall_darwin_arm64.zip"
-      sha256 "b4e60c0659b293d6ed06cfbe1b123fd43b3935ecc071be283761424b056bc31b"
+      url "https://github.com/veerendra2/mise-dotfiles-uninstall/releases/download/v1.1.0/mise-dotfiles-uninstall_darwin_arm64.zip"
+      sha256 "077c1f0277e401842811328703feaf57ca54b474fa4873f9a6ec7e6f1c572ae0"
 
       define_method(:install) do
         bin.install "mise-dotfiles-uninstall"
@@ -29,15 +29,15 @@ class MiseDotfilesUninstall < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/veerendra2/mise-dotfiles-uninstall/releases/download/v1.0.0/mise-dotfiles-uninstall_linux_x86_64.zip"
-      sha256 "90bc804f782bd6a696bc8d51ee77d066e37c87e78313f794612e49df20d60bef"
+      url "https://github.com/veerendra2/mise-dotfiles-uninstall/releases/download/v1.1.0/mise-dotfiles-uninstall_linux_x86_64.zip"
+      sha256 "14948dab4f62996e0d290b36708ebf98f8938d986c6a39f31a808ede9b48fb98"
       define_method(:install) do
         bin.install "mise-dotfiles-uninstall"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/veerendra2/mise-dotfiles-uninstall/releases/download/v1.0.0/mise-dotfiles-uninstall_linux_arm64.zip"
-      sha256 "caf4f472f373def2050c1c6f164d5774a1b646392df101402739f8a57aa91b8b"
+      url "https://github.com/veerendra2/mise-dotfiles-uninstall/releases/download/v1.1.0/mise-dotfiles-uninstall_linux_arm64.zip"
+      sha256 "34962300c7ef83de25d9279fb06594f5a9e0dec0430f3f297f63b3beead845b0"
       define_method(:install) do
         bin.install "mise-dotfiles-uninstall"
       end
